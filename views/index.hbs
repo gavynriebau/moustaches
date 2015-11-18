@@ -1,2 +1,13 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<p>Welcome to {{title}}, where you can draw a moustache on someone</p>
+
+<form action="/" method="post" enctype="multipart/form-data">
+  <div>
+    <label>Pick an image to draw on</label><br />
+    <input type="file" name="image" />
+  </div>
+  <br />
+  <div>
+    <input type="submit" value="Upload" />
+  </div>
+</form>

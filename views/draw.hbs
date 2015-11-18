@@ -1,0 +1,36 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}, where you can draw a moustache on someone</p>
+
+<div>
+  <canvas id="canvas" width="500" height="800"><canvas>
+  <script>
+    "use strict";
+
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    var image = new Image();
+    image.addEventListener("load", function() {
+      context.drawImage(image, 0, 0);
+
+      var moustache = new Image();
+      moustache.addEventListener("load", function() {
+
+        canvas.addEventListener("mousedown", function(ev) {
+          var x = ev.offsetX - (moustache.width / 2);
+          var y = ev.offsetY - (moustache.height / 2);
+
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          context.drawImage(image, 0, 0);
+          context.drawImage(moustache, x, y);
+        }, false);
+
+
+      }, false);
+      moustache.src = "images/moustache.png";
+
+    }, false);
+    image.src = "uploads/{{name}}";
+  </script>
+  <!--<img src="uploads/{{name}}" />-->
+</div>
