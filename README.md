@@ -8,3 +8,6 @@ This is a technical demo [ExpressJS](http://expressjs.com/) site that uses the [
 * [HTML5 canvas element](https://developer.mozilla.org/en/docs/Web/HTML/Element/canvas) is used for rendering an image and producing a new image that has a moustache overlayed onto it.
 
 To run this locally run `npm install` and then `npm start`.
+
+### Demo
+http://moustaches.herokuapp.com/
