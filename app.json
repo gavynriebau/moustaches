@@ -1,8 +1,0 @@
-{
-  "name": "Moustaches",
-  "description": "ExpressJS app that allows for drawing moustaches on images",
-  "repository": "https://github.com/gavynriebau/moustaches",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
-  "keywords": ["node", "express", "static", "moustaches"],
-  "image": "heroku/nodejs"
-}

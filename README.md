@@ -10,4 +10,4 @@ This is a technical demo [ExpressJS](http://expressjs.com/) site that uses the [
 To run this locally run `npm install` and then `npm start`.
 
 ### Demo
-http://moustaches.herokuapp.com/
+http://moustaches.gavynriebau.com/
